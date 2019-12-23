@@ -1,7 +1,16 @@
 <html>
 <head>
 <style>
+    body {
+        margin-top: 0;
+        padding-top: 0;
+    }
     header {
+        padding-top: 6px;
+        height: auto;
+        width: 100%;
+        position: fixed;
+        background-color: white;
         font-family: nyt-franklin,helvetica,arial,sans-serif;
         font-weight: 700;
         border-bottom-style: solid;
@@ -57,6 +66,7 @@
         float: right;
     }
     #headline{
+        padding-top: 100px;
         margin: 0 auto;
         color: #121212;
         font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
@@ -72,13 +82,12 @@
         width: 1004px;
         height: auto;
     }
-    #caption {
-        width: 1004px;
+    .caption {
         margin: 0 auto;
         color: #666666;
         font-size: 0.9375rem;
     }
-    #flexContainer {
+    #flexContainer{
         display: flex;
         justify-content: center;  
     }
@@ -86,6 +95,24 @@
         display: flex;
         flex-direction: column;
         width: 600px;
+    }
+    #diagramContainer {
+        display: block;
+        margin: 0 auto;
+        width: 945px;
+    }
+    #diagram{
+        display: grid;
+        width: 945px;
+        height: 576px;
+        grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+        background-image: url(inflation-945.png);
+        background-size: cover;
+    }
+    .diagramCaption {
+        margin-top: 150px;
+        font-size: 12px;
+        padding: 0 5px;
     }
     #author{
         margin-top: 40px;
@@ -113,51 +140,60 @@
 </header>
 <div id="headline">Space Ripples Reveal Big Bang’s Smoking Gun</div>
 <img id="mainimg" src="18cosmos-superJumbo.jpg.webp">
-<div id="caption">Alan Guth was one of the first physicists to hypothesize the existence of inflation, which explains how the universe expanded so uniformly and so quickly in the instant after the Big Bang 13.8 billion years ago. Credit...Rick Friedman for The New York Times</div>
+<div class="caption" style="width: 1004px;">Alan Guth was one of the first physicists to hypothesize the existence of inflation, which explains how the universe expanded so uniformly and so quickly in the instant after the Big Bang 13.8 billion years ago. Credit...Rick Friedman for The New York Times</div>
 <div id="flexContainer">
 <div id="main">
 <div id="author">By Dennis Overbye</div>
 <div id="date">March 17, 2014</div> 
-<p class="article">CAMBRIDGE, Mass. — One night late in 1979, an itinerant young physicist named Alan Guth, with a new son and a year’s appointment at Stanford, stayed up late with his notebook and equations, venturing far beyond the world of known physics.
+<p class="article">CAMBRIDGE, Mass. — One night late in 1979, an itinerant young physicist named Alan Guth, with a new son and a year’s appointment at Stanford, stayed up late with his notebook and equations, venturing far beyond the world of known physics.</p>
 
-He was trying to understand why there was no trace of some exotic particles that should have been created in the Big Bang. Instead he discovered what might have made the universe bang to begin with. A potential hitch in the presumed course of cosmic evolution could have infused space itself with a special energy that exerted a repulsive force, causing the universe to swell faster than the speed of light for a prodigiously violent instant.
+<p class="article">He was trying to understand why there was no trace of some exotic particles that should have been created in the Big Bang. Instead he discovered what might have made the universe bang to begin with. A potential hitch in the presumed course of cosmic evolution could have infused space itself with a special energy that exerted a repulsive force, causing the universe to swell faster than the speed of light for a prodigiously violent instant.</p>
 
-If true, the rapid engorgement would solve paradoxes like why the heavens look uniform from pole to pole and not like a jagged, warped mess. The enormous ballooning would iron out all the wrinkles and irregularities. Those particles were not missing, but would be diluted beyond detection, like spit in the ocean.
+<p class="article">If true, the rapid engorgement would solve paradoxes like why the heavens look uniform from pole to pole and not like a jagged, warped mess. The enormous ballooning would iron out all the wrinkles and irregularities. Those particles were not missing, but would be diluted beyond detection, like spit in the ocean.</p>
 
-“SPECTACULAR REALIZATION,” Dr. Guth wrote across the top of the page and drew a double box around it.
-Sign up for Science Times
+<p class="article">“SPECTACULAR REALIZATION,” Dr. Guth wrote across the top of the page and drew a double box around it.
+Sign up for Science Times</p>
 
-We’ll bring you stories that capture the wonders of the human body, nature and the cosmos.
+<p class="article">We’ll bring you stories that capture the wonders of the human body, nature and the cosmos.</p>
 
-On Monday, Dr. Guth’s starship came in. Radio astronomers reported that they had seen the beginning of the Big Bang, and that his hypothesis, known undramatically as inflation, looked right.
+<p class="article">On Monday, Dr. Guth’s starship came in. Radio astronomers reported that they had seen the beginning of the Big Bang, and that his hypothesis, known undramatically as inflation, looked right.</p>
 
-Reaching back across 13.8 billion years to the first sliver of cosmic time with telescopes at the South Pole, a team of astronomers led by John M. Kovac of the Harvard-Smithsonian Center for Astrophysics detected ripples in the fabric of space-time — so-called gravitational waves — the signature of a universe being wrenched violently apart when it was roughly a trillionth of a trillionth of a trillionth of a second old. They are the long-sought smoking-gun evidence of inflation, proof, Dr. Kovac and his colleagues say, that Dr. Guth was correct.
-    
-    Inflation has been the workhorse of cosmology for 35 years, though many, including Dr. Guth, wondered whether it could ever be proved.
+<p class="article">Reaching back across 13.8 billion years to the first sliver of cosmic time with telescopes at the South Pole, a team of astronomers led by John M. Kovac of the Harvard-Smithsonian Center for Astrophysics detected ripples in the fabric of space-time — so-called gravitational waves — the signature of a universe being wrenched violently apart when it was roughly a trillionth of a trillionth of a trillionth of a second old. They are the long-sought smoking-gun evidence of inflation, proof, Dr. Kovac and his colleagues say, that Dr. Guth was correct.</p>
+<p class="article">    
+    Inflation has been the workhorse of cosmology for 35 years, though many, including Dr. Guth, wondered whether it could ever be proved.</p>
 
-If corroborated, Dr. Kovac’s work will stand as a landmark in science comparable to the recent discovery of dark energy pushing the universe apart, or of the Big Bang itself. It would open vast realms of time and space and energy to science and speculation.
+<p class="article">If corroborated, Dr. Kovac’s work will stand as a landmark in science comparable to the recent discovery of dark energy pushing the universe apart, or of the Big Bang itself. It would open vast realms of time and space and energy to science and speculation.</p>
 
-Confirming inflation would mean that the universe we see, extending 14 billion light-years in space with its hundreds of billions of galaxies, is only an infinitesimal patch in a larger cosmos whose extent, architecture and fate are unknowable. Moreover, beyond our own universe there might be an endless number of other universes bubbling into frothy eternity, like a pot of pasta water boiling over.
+<p class="article">Confirming inflation would mean that the universe we see, extending 14 billion light-years in space with its hundreds of billions of galaxies, is only an infinitesimal patch in a larger cosmos whose extent, architecture and fate are unknowable. Moreover, beyond our own universe there might be an endless number of other universes bubbling into frothy eternity, like a pot of pasta water boiling over.
 Editors’ Picks
 Two Renters Seek Enough Space for Their Beloved Books, but What Will They Give Up to Get It?
 Where Are the Tech Zillionaires? San Francisco Faces the I.P.O. Fizzle
-A Lonely Plea: ‘Anybody Need a Grandma for Christmas?’
-
+A Lonely Plea: ‘Anybody Need a Grandma for Christmas?’</p>
+<p class="article">
 ‘As Big as It Gets’
-
+</p><p class="article">
 In our own universe, it would serve as a window into the forces operating at energies forever beyond the reach of particle accelerators on Earth and yield new insights into gravity itself. Dr. Kovac’s ripples would be the first direct observation of gravitational waves, which, according to Einstein’s theory of general relativity, should ruffle space-time.
-
+</p><p class="article">
 Marc Kamionkowski of Johns Hopkins University, an early-universe expert who was not part of the team, said, “This is huge, as big as it gets.”
-
+</p><p class="article">
 He continued, “This is a signal from the very earliest universe, sending a telegram encoded in gravitational waves.”
-
+</p><p class="article">
 The ripples manifested themselves as faint spiral patterns in a bath of microwave radiation that permeates space and preserves a picture of the universe when it was 380,000 years old and as hot as the surface of the sun.
-
+</p><p class="article">
 Dr. Kovac and his collaborators, working in an experiment known as Bicep, for Background Imaging of Cosmic Extragalactic Polarization, reported their results in a scientific briefing at the Center for Astrophysics here on Monday and in a set of papers submitted to The Astrophysical Journal.
 </p>
-
 </div>
+</div>
+<div id="diagramContainer"><h3>The Theory of Inflation</h3>
+<div class="caption">Astronomers have found evidence to support the theory of inflation, which explains how the universe expanded so uniformly and so quickly in the instant after the Big Bang 13.8 billion years ago.</div>
+<div id="diagram">
+ <p class="diagramCaption">THE UNIVERSE  is just under 14 billion years old. From our position in the Milky Way galaxy, we can observe a sphere that is now about 92 billion light-years across. But there's a mystery. Wherever we look, the universe has an even temperature.</p><p class="diagramCaption">NOT ENOUGH TIME  The universe is not old enough for light to have traveled the vast distance from one side of the universe to the other, and there has not been enough time for scattered patches of hot and cold to mix into an even temperature.</p><p class="diagramCaption">DISTANT COFFEE  At a smaller scale, imagine using a telescope to look a mile in one direction. You see a coffee cup, and from the amount of steam, you can estimate its temperature and how much it has cooled. </p><p class="diagramCaption">COFFEE EVERYWHERE  Now turn around and look a mile in the other direction. You see a similar coffee cup, at exactly the same temperature. Coincidence? Maybe. But if you see a similar cup in every direction, you might want to look for another explanation.</p><p class="diagramCaption">STILL NOT ENOUGH TIME  There has not been enough time to carry coffee cups from place to place before they get cold. But if all the coffee cups were somehow filled from a single coffee pot, all at the same time, that might explain their even temperature.</p><p class="diagramCaption">INFLATION  solves this problem. The theory proposes that, less than a trillionth of a second after the Big Bang, the universe expanded faster than the speed of light. Tiny ripples in the violently expanding energy field eventually grew into the large-scale structures of the universe.</p><p class="diagramCaption">FLUCTUATION  Astronomers have now detected evidence of these ancient fluctuations in swirls of polarized light in the cosmic background radiation, which is energy left over from the early universe. These are gravitational waves predicted by Einstein.</p><p class="diagramCaption">EXPANSION  Returning to our coffee, imagine a single, central pot expanding faster than light and cooling to an even temperature as it expands. That is something like inflation. And the structure of the universe mirrors the froth and foam of the original pot.</p>                      
+
+
     
+    
+    
+</div>
 </div>
 </body>
 <script>
